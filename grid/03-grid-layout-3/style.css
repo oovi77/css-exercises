@@ -17,15 +17,47 @@
 
 .header {
   background-color: #393f4d;
+
+  /* */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
 }
 
 .logo {
+  /* */
+  margin-right: auto;
 }
 
+/*menu all my additions */
 .menu {
+  display: grid;
+  border: 1px solid pink;
+  margin-left: auto;
 }
 
 .menu ul {
+    /* */
+    display: grid;
+    
+    grid-template-columns: repeat(4, minmax(150px, 270px));
+    /*grid-template-columns: 1fr 1fr 1fr 1fr; - changing this
+    to use minmax instead as the space between headers is
+    too large when full screen*/
+
+    /*look at how to make the spaces between the header link one
+    boxes smaller using minmax? */
+}
+
+/*my additions */
+ul {
+  list-style-type: none;
+}
+
+/* */
+.menu ul {
+  /*justify-self: center;*/
+  align-self: center;
 }
 
 .menu ul,
